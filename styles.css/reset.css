@@ -39,11 +39,6 @@ body {
     cursor: pointer;
   }
   
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-  }
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -51,4 +46,13 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
+  }
+  :root {
+    --main: #111;
+    --accent: #1e1823;
+    --background: #fafafa;
+    --green: #4c4c4c;
+    --orange: #fd9222;
+    --white: #fff; 
+    --ecri: #fcf1e0;
   }
