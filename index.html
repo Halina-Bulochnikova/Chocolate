@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./styles.css/reset.css" />
     <link rel="stylesheet" href="./styles.css/allstyles.css" />
   </head>
-<body>
+
+  <!---------------HEADER----------------------->
+
     <header>
         <div class="container container-header">
           <nav class="navigation">
@@ -24,13 +26,14 @@
               </svg>
             </a>
             <ul class="nav-list">
-              <li class="nav-list-item"><a href="">Home</a></li>
-              <li class="nav-list-item"><a href="">How it’s made?</a></li>
-              <li class="nav-list-item"><a href="">Chocolate is loved</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="">Home</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="">How it’s made?</a></li>
+              <li class="nav-list-item"><a class="nav-list-link" href="">Chocolate is loved</a></li>
             </ul>
             <ul class="soc-header">
               <li class="soc-icon-block">
                 <a href=""
+                  class="soc-icon-link"
                    target="_blank"
                    rel="no-referrer">
                   <svg class="soc-icon" width="24" height="24">
@@ -40,6 +43,7 @@
               </li>
               <li class="soc-icon-block">
                 <a href=""
+                   class="soc-icon-link"
                    target="_blank"
                    rel="no-referrer">
                   <svg class="soc-icon" width="24" height="24">
@@ -49,6 +53,7 @@
             </li>
               <li class="soc-icon-block">
                 <a href=""
+                   class="soc-icon-link"
                    target="_blank"
                    rel="no-referrer">
                   <svg class="soc-icon" width="24" height="24">
@@ -65,14 +70,16 @@
           </nav>
         </div>
     </header>
-    <div class="mobile-menu is-open" data-modal-mobile>
+
+    <!-------------mobile  menu----------------->
+
+    <div class="mobile-menu is-open" data-modal-mobile hidden>
       <div class="mobile-container">
         <button class="mobile-button" type="button" data-modal-close-mobile>
           <svg class="mobile-icon" width="14" height="14">
             <use href="./images/icons.svg#icon-close-mobile"></use>
           </svg>
         </button>
-        <div class="block-nav-soc">
           <nav class="mobile-nav-block">
             <ul class="mobile-nav-list">
               <li class="mobile-nav-item"><a href="#go-home"></a>Home</li>
@@ -109,9 +116,23 @@
               </a>
             </li>
           </ul>
-        </div>
       </div>
     </div>
+    
+    <!---------------------HERO-------------------->
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Treat yourself or a loved one 
+          to our finest ingredients for a moment of pure delight!</h1>
+        <button type="button" class="hero-button"><a href="#go-"></a>Buy now</button>
+        <button type="button" class="hero-button"><a href="#go-"></a>How it’s made</button>
+        <button type="button" class="hero-button"><a href="#go-"></a>How it’s made</button>
+        <button type="button" class="hero-button"><a href="#go-"></a>scroll down</button>
+      </div>
+    </section>
+
+
     <main>
     </main>
     <footer>

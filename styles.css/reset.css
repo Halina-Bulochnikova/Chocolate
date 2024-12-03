@@ -48,11 +48,16 @@ body {
     padding: 0;
   }
   :root {
-    --main: #111;
-    --accent: #1e1823;
-    --background: #fafafa;
-    --green: #4c4c4c;
-    --orange: #fd9222;
-    --white: #fff; 
-    --ecri: #fcf1e0;
+    --font-family: 'Montserrat', sans-serif;
+
+    --black: #111;
+	  --orange: #fd9222;
+	  --violet: #1e1823;
+	  --beige: #fcf1e0;
+	  --light: #fafafa;
+	  --gray: #4c4c4c;
+	  --white: #fff;
+
+    color: #242424;
+    background-color: rgba(255, 255, 255, 0.87);
   }
