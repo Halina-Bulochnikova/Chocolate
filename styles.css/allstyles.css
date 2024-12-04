@@ -21,7 +21,12 @@
 }
 
 /*----------------------HEADER----------------*/
-
+.container-header {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
 .navigation {
     display: flex;
     align-items: center;
@@ -267,7 +272,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 335px;
         height: 620px;
 }
-@media screen and (min-resolution: 2dppx),
+    @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
     .hero {
@@ -279,12 +284,52 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   @media screen and (min-width: 768px) {
-
+    .hero {
+        background-color: #1e1823;
+        background-image: linear-gradient(
+            rgba(30, 24, 35, 0.4),
+            rgba(30, 24, 35, 0.4)),
+            url(../images/hero-tab-1x.jpg);
+            width: 704px;
+            height: 890px;          
+    }
+    @media screen and (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (-webkit-min-device-pixel-ratio: 2) {
+        .hero {
+          background-image: linear-gradient(
+              rgba(30, 24, 35, 0.4),
+              rgba(30, 24, 35, 0.4)
+            ),
+            url(../images/hero-tab-2x.jpg);
+        }
+      }
   }
   @media screen and (min-width: 1200px) {
-
+    .hero {
+    background-color: #1e1823;
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)),
+        url(../images/hero-desk-1x.jpg); 
+        border-radius: 30px;
+        width: 1136px;
+        height: 600px;         
+}
+@media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(30, 24, 35, 0.4),
+          rgba(30, 24, 35, 0.4)
+        ),
+        url(../images/hero-desk-2x.jpg);
+    }
+  }
   }
 .container {
+
 }
 @media screen and (min-width: 768px) {
 
@@ -292,15 +337,39 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
 
 }
+.container-hero {
+    padding: 395px 20px 20px 20px;
+}
+@media screen and (min-width: 768px) {
+    .container-hero {
+        padding: 671px 40px 40px 40px;
+    }
+}
+@media screen and (min-width: 1200px){
+.container-hero {
+    padding: 381px 40px 40px 40px;
+}    
+}
 .hero-title {
+    font-weight: 500;
+    font-size: 20px;             
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--white);
 }
-@media screen and (min-width: 768px) [
-
-]
+@media screen and (min-width: 768px) {
+    .hero-title {
+    font-size: 28px;
+    }
+}
 @media screen and (min-width: 1200px) {
+    .hero-title {
 
+    }
 }
-.hero-button {
+    .hero-button {
+    border-radius: 100px;
+    padding: 12px 28px;
 }
 @media screen and (min-width: 768px) [
 
@@ -308,6 +377,48 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
     
 }
+.button1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white);
+    background: var(--orange);
+    height: 41px; 
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
 
+}
+@media screen and (min-width: 1200px) {
+
+}
+.button2 {
+    
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+    
+}
+.button3 {
+    
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+    
+}
+.button4 {
+    
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+    
+}
   
   
