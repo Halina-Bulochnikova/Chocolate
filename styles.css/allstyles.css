@@ -21,12 +21,6 @@
 }
 
 /*----------------------HEADER----------------*/
-.container-header {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 14px;
-    margin-left: 20px;
-}
 .navigation {
     display: flex;
     align-items: center;
@@ -265,12 +259,12 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)),
         url(../images/hero-mob-1x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 30px;
-        width: 335px;
-        height: 620px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 335px;
+    height: 620px;
 }
     @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
@@ -328,26 +322,18 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   }
-.container {
-
-}
-@media screen and (min-width: 768px) {
-
-}
-@media screen and (min-width: 1200px) {
-
-}
 .container-hero {
-    padding: 395px 20px 20px 20px;
+    padding-top: 395px;
+    padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
     .container-hero {
-        padding: 671px 40px 40px 40px;
+        padding-top: 671px;
     }
 }
 @media screen and (min-width: 1200px){
 .container-hero {
-    padding: 381px 40px 40px 40px;
+    padding-top: 381px;
 }    
 }
 .hero-title {
@@ -356,6 +342,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.2;
     letter-spacing: -0.03em;
     color: var(--white);
+    padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
     .hero-title {
@@ -364,10 +351,19 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
     .hero-title {
-
     }
 }
-    .hero-button {
+.hero-block-button-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    row-gap: 32px;
+    column-gap: 14px;
+}
+.hero-button {
     border-radius: 100px;
     padding: 12px 28px;
 }
@@ -377,7 +373,8 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
     
 }
-.button1 {
+
+.hero-block-button-list li:first-child .hero-button {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -393,8 +390,12 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
 
 }
-.button2 {
-    
+.hero-block-button-list li:nth-child(2) .hero-button {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 159px;
+    height: 41px;
+    color: var(--white);
 }
 @media screen and (min-width: 768px) {
 
@@ -402,8 +403,28 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
     
 }
-.button3 {
-    
+.hero-block-button-list li:nth-child(3) .hero-button {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .hero-block-button-list li:nth-child(3) .hero-button {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero-block-button-list li:nth-child(3) .hero-button {
+        display: flex;
+    }
+}
+.hero-block-button-list li:nth-child(4) .hero-button {
+    background: transparent;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: var(--white);
 }
 @media screen and (min-width: 768px) {
 
@@ -411,14 +432,12 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
     
 }
-.button4 {
+.scroll-icon-fon {
     
 }
-@media screen and (min-width: 768px) {
+.hero-scroll {
+    fill: var(--orange);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-@media screen and (min-width: 1200px) {
-    
-}
-  
   
