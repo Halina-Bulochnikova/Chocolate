@@ -277,7 +277,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
         url(../images/hero-mob-2x.jpg);
     }
   }
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     .hero {
         background-color: #1e1823;
         background-image: linear-gradient(
@@ -299,7 +299,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
       }
   }
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     .hero {
     background-color: #1e1823;
     background-image: linear-gradient(
@@ -325,13 +325,16 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 .container-hero {
     padding-top: 395px;
     padding-left: 20px;
+    height: 100%;
 }
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     .container-hero {
         padding-top: 671px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
-@media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px){
 .container-hero {
     padding-top: 381px;
 }    
@@ -344,12 +347,13 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--white);
     padding-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     .hero-title {
     font-size: 28px;
+    padding-right: 140px;
     }
 }
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     .hero-title {
     }
 }
@@ -360,7 +364,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
     font-size: 14px;
     color: #fff;
-    row-gap: 32px;
+    margin-bottom: 32px;
     column-gap: 14px;
 }
 .hero-button {
@@ -416,7 +420,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
         display: flex;
     }
 }
-.hero-block-button-list li:nth-child(4) .hero-button {
+.scroll-icon-fon {
     background: transparent;
     border: none;
     font-family: "Montserrat", sans-serif;
@@ -425,6 +429,9 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.17;
     letter-spacing: -0.03em;
     color: var(--white);
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 @media screen and (min-width: 768px) {
 
@@ -432,13 +439,18 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
     
 }
-.scroll-icon-fon {
+.scroll-icon {
     border-radius: 100%;
-    fill: var(--white);
+    background-color: var(--white);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero-scroll {
     fill: var(--orange);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
+
   
