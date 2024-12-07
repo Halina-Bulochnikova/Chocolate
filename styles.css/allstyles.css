@@ -254,7 +254,7 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 /*---------------------HERO--------------------*/
 
 .hero {
-    background-color: #1e1823;
+    background-color: var(--violet);
     background-image: linear-gradient(
         rgba(30, 24, 35, 0.4),
         rgba(30, 24, 35, 0.4)),
@@ -346,16 +346,26 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: -0.03em;
     color: var(--white);
     padding-bottom: 32px;
+    padding-right: 20px;
 }
     @media screen and (min-width: 768px) {
     .hero-title {
     font-size: 28px;
-    padding-right: 140px;
+    padding-right: 180px;
     }
 }
     @media screen and (min-width: 1200px) {
     .hero-title {
+        padding-right: 612px;
     }
+}
+    @media screen and (min-width: 768px) {
+.hero-btn-scroll {
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: space-between;
+}
 }
 .hero-block-button-list {
     display: flex;
@@ -367,14 +377,22 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 32px;
     column-gap: 14px;
 }
+    @media screen and (min-width: 768px) {  
+    .hero-block-button-list {
+        display: flex;
+    }
+}
+    @media screen and (min-width: 1200px) {
+    .hero-block-button-list
+}
 .hero-button {
     border-radius: 100px;
     padding: 12px 28px;
 }
-@media screen and (min-width: 768px) [
+    @media screen and (min-width: 768px) [
 
 ]
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     
 }
 
@@ -387,11 +405,18 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 41px; 
     display: flex;
     align-items: center;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1); background 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
 
 }
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
+
+}
+.hero-block-button-list li:first-child .hero-button:hover,
+.hero-block-button-list li:first-child .hero-button:focus {
+    color: var(--orange);
+    background: var(--beige);
 
 }
 .hero-block-button-list li:nth-child(2) .hero-button {
@@ -400,25 +425,44 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 159px;
     height: 41px;
     color: var(--white);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1); background 300ms cubic-bezier(0.4, 0, 0.2, 1); border: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
 
 }
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     
+}
+.hero-block-button-list li:nth-child(2) .hero-button:hover,
+.hero-block-button-list li:nth-child(2) .hero-button:focus {
+    color: var(--orange);
+    background: var(--white);
+    border: 1px solid #fd9222;
 }
 .hero-block-button-list li:nth-child(3) .hero-button {
     display: none;
 }
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     .hero-block-button-list li:nth-child(3) .hero-button {
         display: none;
     }
 }
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     .hero-block-button-list li:nth-child(3) .hero-button {
+        background: transparent;
         display: flex;
+        border: 1px solid #fff;
+        width: 159px;
+        height: 41px;
+        color: var(--white);
+        transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1); background 300ms cubic-bezier(0.4, 0, 0.2, 1); border: 300ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+}
+.hero-block-button-list li:nth-child(3) .hero-button:hover,
+.hero-block-button-list li:nth-child(3) .hero-button:focus {
+    color: var(--orange);
+    background: var(--white);
+    border: 1px solid #fd9222;
 }
 .scroll-icon-fon {
     background: transparent;
@@ -432,12 +476,17 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     gap: 12px;
     align-items: center;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
 
 }
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     
+}
+.scroll-icon-fon:hover,
+.scroll-icon-fon:focus {
+    color: var(--orange);
 }
 .scroll-icon {
     border-radius: 100%;
@@ -447,10 +496,171 @@ transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-icon:hover,
+.scroll-icon:focus {
+    background-color: var(--orange);
 }
 .hero-scroll {
     fill: var(--orange);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hero-scroll:hover,
+.hero-scroll:focus {
+    fill: var(--white);
+}
+/*------------------------------ABOUT US----------------*/
+.container-about {
+    margin-top: 80px;
+    background: var(--violet);
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 320px;
+    max-width: 375px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+    @media screen and (min-width: 768px) {
+        .container-about {
+            min-width: 768px;
+            margin-top: 48px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+}
+    @media screen and (min-width: 1200px) {
+        .container-about {
+            min-width: 1200px;
+            margin-top: 80px;
+        }
+}
+.container-about-block {
 
-  
+}
+    @media screen and (min-width: 768px) {
+
+}
+    @media screen and (min-width: 1200px) {
+    
+}
+.about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 88px;
+    row-gap: 44px;
+}
+    @media screen and (min-width: 768px) {
+        .about-us-list {
+            column-gap: 88px;
+            row-gap: 44px;
+        }
+}
+    @media screen and (min-width: 1200px) {
+        .about-us-list {
+            display: flex;
+            flex-direction: row;
+            gap: 88px;
+        }
+}
+.about-us-item {
+    margin-top: 20px;
+    flex: 1;
+    position: relative;
+    padding: 0 1rem;
+}
+    @media screen and (min-width: 768px) {
+        .about-us-item {
+            width: calc((100% - 88px) / 2);
+        }
+}
+    @media screen and (min-width: 1200px) {
+        .about-us-item {
+            width: calc((100% - 88px) / 3);
+        }
+} 
+.about-us-item:last-child {
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+    .about-us-item:last-child {
+        margin-bottom: 83px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+} 
+.about-icon {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+@media screen and (min-width: 768px) {
+
+}
+    @media screen and (min-width: 1200px) {
+    
+}
+.about-us-icon {
+    
+}
+    @media screen and (min-width: 768px) {
+
+}
+    @media screen and (min-width: 1200px) {
+    
+}
+.about-us-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+
+}
+    @media screen and (min-width: 1200px) {
+        .about-us-title {
+          letter-spacing: 0.01em;      
+        }
+}
+.about-us-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+    @media screen and (min-width: 768px) {
+
+}
+    @media screen and (min-width: 1200px) {
+        .about-us-text {
+           line-height: 1.29;     
+        }  
+}
+    @media screen and (min-width: 1200px) {
+
+.about-us-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: -35%;
+    background-color: var(--white);
+    opacity: 0.6;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 0px;
+    width: 124px;
+    transform: rotate(-90deg);
+  }
+}
+/*---------------------PRODUCTS----------------*/
+
