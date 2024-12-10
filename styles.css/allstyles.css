@@ -570,7 +570,6 @@ justify-content: space-between;
 }
 .about-us-item {
     margin-top: 20px;
-    flex: 1;
     position: relative;
     padding: 0 1rem;
 }
@@ -581,6 +580,7 @@ justify-content: space-between;
 }
     @media screen and (min-width: 1200px) {
         .about-us-item {
+            flex: 1;
             width: calc((100% - 88px) / 3);
         }
 } 
@@ -670,15 +670,18 @@ justify-content: space-between;
 .container-products {
     margin-top: 80px;
     width: 335px;
+    height: 1239px;
 }
     @media screen and (min-width: 768px) {
         .container-products {
+            margin-top: 100px;
             width: 704px;
             height: 1282px;
         }
 }
     @media screen and (min-width: 1200px) {
         .container-products {
+            margin-top: 120px;
             width: 1136px;
             height: 670px;
         }
@@ -866,12 +869,66 @@ justify-content: space-between;
 /*---------------------How it’s made?-----------*/
 
 .made-container {
+    margin-top: 80px;
+    width: 335px;
+    height: 1032px;
 }
+@media screen and (min-width: 768px) {
+    .made-container {
+        margin-top: 100px;
+        width: 614px;
+        height: 854px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .made-container {
+        margin-top: 154px;
+        width: 1136px;
+        height: 478px;
+    }
+    }
+    
 .made-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+    .made-title {
+    font-size: 24px;        
+    line-height: 1.17;
+    margin-bottom: 50px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    }
 .made-title-elemet {
+    color: var(--orange);
 }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+    }
+.images-block {
+    display: flex;
+    border-radius: 35px;
+    width: 335px;
+    height: 500px;
+    }
 .made-list {
 }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+    }
 .made-list-item {
 }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+    }
