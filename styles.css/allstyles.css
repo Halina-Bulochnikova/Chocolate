@@ -1008,7 +1008,7 @@ justify-content: space-between;
     background: transparent;
 }
 .icon-made {
-    fill: var(--orange);
+    fill: var(--white);
         }
 .subtitle {
     font-weight: 600;
@@ -1591,6 +1591,20 @@ justify-content: space-between;
             height: 298px;
         }
 }
+@media screen and (min-width: 768px) {
+    .block-up-liner {
+     display: flex;
+     flex-direction: row;
+    }
+}
+@media screen and (min-width: 1200px) {
+   .block-up-liner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+}
 
 .footer-title {
     font-weight: 500;
@@ -1600,7 +1614,6 @@ justify-content: space-between;
     color: var(--white);
     width: 300px;
     margin-bottom: 32px;
-
 }
     @media screen and (min-width: 768px) {
         .footer-title {
@@ -1610,24 +1623,20 @@ justify-content: space-between;
         }
 }
     @media screen and (min-width: 1200px) {
-    
-}
-    @media screen and (min-width: 768px) {
-       .block-up-liner {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 50px;
+        .footer-title {
+margin-bottom: 0;
+        }
     }
+@media screen and (min-width: 768px) {
     .block-address-soc {
         display: flex;
         flex-direction: row-reverse;
     }
 }
 @media screen and (min-width: 1200px) {
-    .block-up-liner {
-        display: flex;
-        
-    }
+    .block-address-soc {
+
+    } 
 }
 .address-block {
     width: 164px;
@@ -1766,29 +1775,35 @@ justify-content: space-between;
         }
     
 }
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
         .block-under-liner {
         display: flex;
         flex-direction: row;
     }
 }
 
+@media screen and (min-width: 1200px) {
+.block-under-liner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+}
+
 .footer-menu {
     margin-top: 32px;
     margin-bottom: 32px;
-
 }
     @media screen and (min-width: 768px) {
         .footer-menu {
-            margin-top: 50px;
-            margin-bottom: 24px;
+            padding-top: 14.5px;
+            margin-bottom: 0;
         }
-
 }
     @media screen and (min-width: 1200px) {
         .footer-menu {
-            margin-top: 50px;
-            margin-bottom: 24px;
+            padding-top: 18px;
         }
     
 }
@@ -1831,8 +1846,7 @@ justify-content: space-between;
 }
     @media screen and (min-width: 768px) {
         .footer-form {
-            margin-top: 24px;
-            margin-bottom: 50px;
+            margin-top: 32px;
         }
 
 }
