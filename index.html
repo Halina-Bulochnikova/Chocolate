@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/svg+xml" href="/images/icons.svg#icon-chocolate" />
+
     <title>Chocolate</title>
     <script type="module" src="./java.js/file-1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -64,7 +66,7 @@
                 </a>
               </li>
             </ul>
-            <button class="burger-btn" type="button" data-modal-open-mobile>
+            <button class="burger-btn mobile-btn-open" type="button" data-modal-open-mobile>
               <svg class="burger-icon" width="28" height="28">
                <use href="./images/icons.svg#icon-icon-menu"></use>
               </svg>
@@ -76,9 +78,9 @@
     <!-------------mobile  menu----------------->
 
     
-    <div class="mobile-menu" data-modal-mobile>
+    <div class="mobile-menu is-open" data-modal-mobile>
       <div class="mobile-container">
-        <button class="mobile-button" type="button" data-modal-close-mobile>
+        <button class="mobile-btn-close burger-btn" type="button">
           <svg class="mobile-icon" width="14" height="14">
             <use href="./images/icons.svg#icon-close-mobile"></use>
           </svg>
@@ -888,5 +890,6 @@
         </div>
       </div>
     </footer>
+     <script src="./java.js/mobile.js" ></script>
 </body>
 </html>
