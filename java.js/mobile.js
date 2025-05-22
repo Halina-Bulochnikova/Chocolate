@@ -2,7 +2,7 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileBtnOpen = document.querySelector('.burger-btn'); // кнопка бургер
 const mobileBtnClose = document.querySelector('.mobile-btn-close'); // кнопка закриття
-const mobileMenuLinks = document.querySelectorAll('.mobile-nav-item'); // посилання в меню
+const mobileMenuLinks = document.querySelectorAll('.mobile-nav-item a'); // <a> у списку меню
 
 // Функція: перемикання видимості меню
 const toggleMenu = () => {
