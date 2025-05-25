@@ -636,7 +636,7 @@ justify-content: space-between;
     content: "";
     position: absolute;
     top: 40%;
-    right: -35%;
+    right: -30%;
     background-color: var(--white);
     opacity: 0.6;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1833,18 +1833,20 @@ color: #111;
     color: var(--orange);
   }
   .form {
-    border-radius: 4px;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    
   }
   
 .input-block {
   display: block;
   flex-direction: column;
-  width: 263px;
+  width: 100%;
   margin-bottom: 15px;
 }
 .modal-icon {
@@ -1890,14 +1892,14 @@ color: #111;
     stroke: var(--orange);
 }
   .input-block-textarea {
-    width: 263px;
+    width: 100%;
     height: 112px;
     margin-bottom: 18px;
 }
   .textarea-input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    width: 263px;
+    width: 100%;
     height: 91px;
     font-size: 13px;
     line-height: 1.17;
@@ -1922,73 +1924,89 @@ color: #111;
 }
   .input-checkbox-block {
     flex-shrink: 0;
-    margin-bottom: 32px;
+    display: flex;
+    user-select: none;
+   margin-bottom: 32px;
 }
   .input-checkbox {
-    border-radius: 6px;
-    border: 1px solid rgba(17, 17, 17, 0.14);
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
+    opacity: 0;
+    transition: all 250ms ease;
 }
   .checkbox-text {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.6);
+    gap: 8px;
+    transition: all 250ms ease;
 }
-  .checkbox-agree-icon {
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
+.checkbox-agree-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
-    margin-right: 8px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    transition: all 250ms ease;
+    background-color: transparent;
+    stroke: transparent;
 }
-  .agree-icon {
-    fill: var(--orange);
-    stroke: var(--orange);
+.checkbox-agree-icon:hover,
+.checkbox-agree-icon:focus {
+    border: none;
+    background-color: var(--orange);
+}
+.agree-icon {
+    position: absolute; 
+    transition: stroke 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .priv {
-  line-height: 1.33;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
   color: var(--orange);
 }
-.input-checkbox:checked+.checkbox-text>.checkbox-agree-icon {
-  background-color: #404bbf;
-  border: none;
-  fill: #F4F4FD;
+.modal-btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;   
+    margin-bottom: 32px;
 }
 .modal-btn {
   font-family: Roboto, sans-serif;
-  font-weight: 500;
-  display: block;
-  font-size: 16px;
-  min-width: 169px;
-  height: 56px;
+  font-weight: 600;
+  font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 1.5;
   color: #fff;
   cursor: pointer;
-  background: #4d5ae5;
+  background: var(--orange);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
 
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+padding: 12px 28px;
+width: 93px;
+height: 41px;
+
+
+}
+.agree-icon {
+    opacity: 0;
+    fill: white;
+    transition: opacity 0.2s ease;
+  }
+
+  .input-checkbox:checked + .checkbox-text .checkbox-agree-icon {
+    background-color: #fd9222;
+    border-color: #fd9222;
+  }
+  .input-checkbox:checked + .checkbox-text .checkbox-agree-icon .agree-icon {
+    opacity: 1;
+  }
   @media screen and (min-width: 768px) {
     .modal {
       width: 408px;
