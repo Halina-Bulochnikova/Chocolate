@@ -635,14 +635,14 @@ justify-content: space-between;
 .about-us-item:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: -25%;
     background-color: var(--white);
     opacity: 0.6;
     border: 1px solid rgba(255, 255, 255, 0.5);
     height: 0px;
     width: 124px;
-    transform: rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
   }
 }
 /*---------------------PRODUCTS----------------*/
