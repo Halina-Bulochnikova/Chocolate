@@ -636,7 +636,7 @@ justify-content: space-between;
     content: "";
     position: absolute;
     top: 40%;
-    right: -30%;
+    right: -35%;
     background-color: var(--white);
     opacity: 0.6;
     border: 1px solid rgba(255, 255, 255, 0.5);
